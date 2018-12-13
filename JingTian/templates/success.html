@@ -8,8 +8,21 @@
         <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script>
+          $(document).ready(function(){
+            $("#hide").click(function(){
+              $("p").hide();
+            });
+            $("#show").click(function(){
+              $("p").show()
+            });
+          });
+        </script>
     </head>
     <body>
-        <h1>Congratulation {{username}},Login success！</h1>
+        <p>Congratulation {{username}},Login success！</p>
+        <button id="hide">HIDE</button>
+        <button id="show">SHOW</button>
     </body>
 </html>
